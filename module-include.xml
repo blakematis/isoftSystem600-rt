@@ -1,0 +1,26 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--com.maxline.isoftSystem600B.dataType-->
+  <type class="com.maxline.isoftSystem600.dataType.BL2SL" name="L2SL"/>
+  <type class="com.maxline.isoftSystem600.dataType.BL2SP" name="L2SP"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLAI" name="LAI"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLAO" name="LAO"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLCTLR" name="LCTLR"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLDI" name="LDI"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLDO" name="LDO"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLENUM" name="LENUM"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLFSSL" name="LFSSL"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLFSSP" name="LFSSP"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLOOAL" name="LOOAL"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLOOAP" name="LOOAP"/>
+  <type class="com.maxline.isoftSystem600.dataType.BLPACI" name="LPACI"/>
+  <!--com.maxline.isoftSystem600B.point-->
+  <type class="com.maxline.isoftSystem600.point.BApogeeReleaseAction" name="ApogeeReleaseAction"/>
+  <type class="com.maxline.isoftSystem600.point.BSystem600BooleanProxyExt" name="System600BooleanProxyExt"/>
+  <type class="com.maxline.isoftSystem600.point.BSystem600NumericProxyExt" name="System600NumericProxyExt"/>
+  <type class="com.maxline.isoftSystem600.point.BSystem600PointDeviceExt" name="System600PointDeviceExt"/>
+  <type class="com.maxline.isoftSystem600.point.BSystem600PointFolder" name="System600PointFolder"/>
+  <type class="com.maxline.isoftSystem600.point.BSystem600StringProxyExt" name="System600StringProxyExt"/>
+</types>
