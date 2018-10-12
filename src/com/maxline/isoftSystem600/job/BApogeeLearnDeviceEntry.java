@@ -1,11 +1,14 @@
 package com.maxline.isoftSystem600.job;
 
+
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.BComponent;
 import javax.baja.sys.BFacets;
 import javax.baja.sys.Property;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 
+@NiagaraType
 public class BApogeeLearnDeviceEntry
         extends BComponent
 {

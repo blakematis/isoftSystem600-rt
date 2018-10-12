@@ -1,9 +1,11 @@
 package com.maxline.isoftSystem600;
 
 import javax.baja.driver.BDeviceFolder;
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 
+@NiagaraType
 public class BSystem600DeviceFolder
         extends BDeviceFolder
 {

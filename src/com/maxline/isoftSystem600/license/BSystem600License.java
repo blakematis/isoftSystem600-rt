@@ -10,6 +10,7 @@ import java.security.PublicKey;
 import java.security.Signature;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.nre.util.TextUtil;
 import javax.baja.sys.Action;
 import javax.baja.sys.BAbsTime;
@@ -26,6 +27,7 @@ import javax.baja.sys.Type;
 import javax.baja.xml.XElem;
 import javax.baja.xml.XParser;
 
+@NiagaraType
 public class BSystem600License
         extends BComponent
 {

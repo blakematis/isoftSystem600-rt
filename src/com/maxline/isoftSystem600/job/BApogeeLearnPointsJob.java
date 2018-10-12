@@ -11,12 +11,14 @@ import javax.baja.file.BIFile;
 import javax.baja.job.BSimpleJob;
 import javax.baja.naming.BOrd;
 import javax.baja.naming.SlotPath;
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.Context;
 import javax.baja.sys.Property;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 import javax.baja.util.BFolder;
 
+@NiagaraType
 public class BApogeeLearnPointsJob
         extends BSimpleJob
         implements System600MessageConst

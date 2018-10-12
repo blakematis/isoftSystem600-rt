@@ -12,6 +12,7 @@ import com.maxline.isoftSystem600.messages.System600PingResponse;
 import com.maxline.isoftSystem600.point.BSystem600PointDeviceExt;
 import com.tridium.basicdriver.BBasicDevice;
 import javax.baja.naming.BOrd;
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.Action;
 import javax.baja.sys.BFacets;
 import javax.baja.sys.BRelTime;
@@ -21,6 +22,7 @@ import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 import javax.baja.util.IFuture;
 
+@NiagaraType
 public class BSystem600Device
         extends BBasicDevice
         implements System600MessageConst

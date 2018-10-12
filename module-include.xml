@@ -3,6 +3,7 @@
 <types>
   <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
   <!--com.maxline.isoftSystem600B.dataType-->
+  <!--com.maxline.isoftSystem600.dataType-->
   <type class="com.maxline.isoftSystem600.dataType.BL2SL" name="L2SL"/>
   <type class="com.maxline.isoftSystem600.dataType.BL2SP" name="L2SP"/>
   <type class="com.maxline.isoftSystem600.dataType.BLAI" name="LAI"/>
@@ -17,10 +18,28 @@
   <type class="com.maxline.isoftSystem600.dataType.BLOOAP" name="LOOAP"/>
   <type class="com.maxline.isoftSystem600.dataType.BLPACI" name="LPACI"/>
   <!--com.maxline.isoftSystem600B.point-->
+  <!--com.maxline.isoftSystem600.point-->
   <type class="com.maxline.isoftSystem600.point.BApogeeReleaseAction" name="ApogeeReleaseAction"/>
   <type class="com.maxline.isoftSystem600.point.BSystem600BooleanProxyExt" name="System600BooleanProxyExt"/>
   <type class="com.maxline.isoftSystem600.point.BSystem600NumericProxyExt" name="System600NumericProxyExt"/>
   <type class="com.maxline.isoftSystem600.point.BSystem600PointDeviceExt" name="System600PointDeviceExt"/>
   <type class="com.maxline.isoftSystem600.point.BSystem600PointFolder" name="System600PointFolder"/>
   <type class="com.maxline.isoftSystem600.point.BSystem600StringProxyExt" name="System600StringProxyExt"/>
+  <!--com.maxline.isoftSystem600-->
+  <type class="com.maxline.isoftSystem600.BSystem600Device" name="System600Device"/>
+  <type class="com.maxline.isoftSystem600.BSystem600DeviceFolder" name="System600DeviceFolder"/>
+  <type class="com.maxline.isoftSystem600.BSystem600Network" name="System600Network"/>
+  <!--com.maxline.isoftSystem600.license-->
+  <type class="com.maxline.isoftSystem600.license.BSystem600License" name="System600License"/>
+  <type class="com.maxline.isoftSystem600.license.BSystem600LicenseConfig" name="System600LicenseConfig"/>
+  <type class="com.maxline.isoftSystem600.license.BSystem600LicenseCount" name="System600LicenseCount"/>
+  <!--com.maxline.isoftSystem600.enums-->
+  <type class="com.maxline.isoftSystem600.enums.BApogeeUnit" name="ApogeeUnit"/>
+  <type class="com.maxline.isoftSystem600.enums.BPointType" name="PointType"/>
+  <!--com.maxline.isoftSystem600.job-->
+  <type class="com.maxline.isoftSystem600.job.BApogeeLearnDeviceEntry" name="ApogeeLearnDeviceEntry"/>
+  <type class="com.maxline.isoftSystem600.job.BApogeeLearnDevicesConfig" name="ApogeeLearnDevicesConfig"/>
+  <type class="com.maxline.isoftSystem600.job.BApogeeLearnDevicesJob" name="ApogeeLearnDevicesJob"/>
+  <type class="com.maxline.isoftSystem600.job.BApogeeLearnPointEntry" name="ApogeeLearnPointEntry"/>
+  <type class="com.maxline.isoftSystem600.job.BApogeeLearnPointsJob" name="ApogeeLearnPointsJob"/>
 </types>

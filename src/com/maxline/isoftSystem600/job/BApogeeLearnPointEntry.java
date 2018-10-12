@@ -1,11 +1,14 @@
 package com.maxline.isoftSystem600.job;
 
 import com.maxline.isoftSystem600.enums.BPointType;
+
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.BComponent;
 import javax.baja.sys.Property;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 
+@NiagaraType
 public class BApogeeLearnPointEntry
         extends BComponent
 {

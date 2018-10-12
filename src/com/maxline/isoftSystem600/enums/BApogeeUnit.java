@@ -1,9 +1,11 @@
 package com.maxline.isoftSystem600.enums;
 
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.BFrozenEnum;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 
+@NiagaraType
 public final class BApogeeUnit
         extends BFrozenEnum {
     public static final int METRIC = 0;

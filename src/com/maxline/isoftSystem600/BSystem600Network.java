@@ -10,6 +10,7 @@ import com.tridium.basicdriver.comm.Comm;
 import com.tridium.basicdriver.serial.BSerialNetwork;
 import java.util.Vector;
 import javax.baja.naming.BOrd;
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.serial.BSerialBaudRate;
 import javax.baja.sys.Action;
 import javax.baja.sys.BBoolean;
@@ -20,6 +21,7 @@ import javax.baja.sys.Property;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 
+@NiagaraType
 public class BSystem600Network
         extends BSerialNetwork
 {

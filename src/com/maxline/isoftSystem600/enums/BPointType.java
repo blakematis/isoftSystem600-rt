@@ -1,10 +1,12 @@
 package com.maxline.isoftSystem600.enums;
 
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.BFrozenEnum;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 import javax.baja.util.Lexicon;
 
+@NiagaraType
 public final class BPointType
         extends BFrozenEnum
 {
