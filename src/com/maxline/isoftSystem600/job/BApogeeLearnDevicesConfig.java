@@ -24,6 +24,17 @@ public class BApogeeLearnDevicesConfig
     }
 
     public static final Property endAddress = newProperty(0, 98, BFacets.makeInt(0, 98));
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.job.BApogeeLearnDevicesConfig(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:40 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public int getEndAddress()
     {

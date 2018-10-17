@@ -14,12 +14,20 @@ import javax.baja.sys.Type;
 public class BSystem600BooleanProxyExt
         extends BSystem600ProxyExt
 {
-    public Type getType()
-    {
-        return TYPE;
-    }
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.point.BSystem600BooleanProxyExt(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:41 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
-    public static final Type TYPE = Sys.loadType(BSystem600BooleanProxyExt.class);
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BSystem600BooleanProxyExt.class);
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+
 
     public void started()
             throws Exception

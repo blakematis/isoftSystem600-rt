@@ -24,6 +24,19 @@ public class BApogeeLearnPointsJob
         implements System600MessageConst
 {
     public static final Property learnedPoints = newProperty(7, new BFolder(), null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.job.BApogeeLearnPointsJob(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:41 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BApogeeLearnPointsJob.class);
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public BFolder getLearnedPoints()
     {
@@ -35,12 +48,7 @@ public class BApogeeLearnPointsJob
         set(learnedPoints, v, null);
     }
 
-    public Type getType()
-    {
-        return TYPE;
-    }
 
-    public static final Type TYPE = Sys.loadType(BApogeeLearnPointsJob.class);
     final BSystem600Device device;
     BApogeeUnit unit;
 

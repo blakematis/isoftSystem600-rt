@@ -10,7 +10,20 @@ import javax.baja.util.Lexicon;
 public final class BPointType
         extends BFrozenEnum
 {
-    static Lexicon lex = Lexicon.make("isoftSystem600B");
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.enums.BPointType(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:40 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BPointType.class);
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+    static Lexicon lex = Lexicon.make("isoftSystem600");
     public static final int NONE = 0;
     public static final int LAI = 1;
     public static final int LAO = 2;
@@ -37,13 +50,6 @@ public final class BPointType
     public static final BPointType lfssl = new BPointType(10);
     public static final BPointType lfssp = new BPointType(11);
     public static final BPointType lenum = new BPointType(12);
-
-    public Type getType()
-    {
-        return TYPE;
-    }
-
-    public static final Type TYPE = Sys.loadType(BPointType.class);
 
     public static BPointType make(int ordinal)
     {

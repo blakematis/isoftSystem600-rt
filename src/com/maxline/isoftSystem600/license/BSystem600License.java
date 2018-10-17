@@ -111,18 +111,23 @@ public class BSystem600License
     }
 
     public static final Action expired = newAction(68, null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.license.BSystem600License(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:41 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public void expired()
     {
         invoke(expired, null, null);
     }
 
-    public Type getType()
-    {
-        return TYPE;
-    }
 
-    public static final Type TYPE = Sys.loadType(BSystem600License.class);
     private static final String MODULE_NAME = "isoftSystem600";
 
     private final BSystem600Network getNetwork()
@@ -387,5 +392,12 @@ public class BSystem600License
     private static BRelTime DEMO_LIMIT = BRelTime.makeHours(2);
     private static final BIcon icon = BIcon.std("wizard.png");
     private static final byte[] PUB_KEY = { 48, -127, -16, 48, -127, -88, 6, 7, 42, -122, 72, -50, 56, 4, 1, 48, -127, -100, 2, 65, 0, -4, -90, -126, -50, -114, 18, -54, -70, 38, -17, -52, -9, 17, 14, 82, 109, -80, 120, -80, 94, -34, -53, -51, 30, -76, -94, 8, -13, -82, 22, 23, -82, 1, -13, 91, -111, -92, 126, 109, -10, 52, 19, -59, -31, 46, -48, -119, -101, -51, 19, 42, -51, 80, -39, -111, 81, -67, -60, 62, -25, 55, 89, 46, 23, 2, 21, 0, -106, 46, -35, -52, 54, -100, -70, -114, -69, 38, 14, -26, -74, -95, 38, -39, 52, 110, 56, -59, 2, 64, 103, -124, 113, -78, 122, -100, -12, 78, -23, 26, 73, -59, 20, 125, -79, -87, -86, -14, 68, -16, 90, 67, 77, 100, -122, -109, 29, 45, 20, 39, 27, -98, 53, 3, 11, 113, -3, 115, -38, 23, -112, 105, -77, 46, 41, 53, 99, 14, 28, 32, 98, 53, 77, 13, -94, 10, 108, 65, 110, 80, -66, 121, 76, -92, 3, 67, 0, 2, 64, 63, -27, 102, 67, 85, 84, 59, 25, -26, -13, 71, Byte.MIN_VALUE, 33, 118, -33, -83, -108, -10, -94, -76, -24, -55, 10, 19, 93, -36, 28, 111, -42, 99, 0, -74, -73, -112, 44, -97, -9, 52, 21, -127, 24, 120, 43, 87, 45, -42, -101, 100, -53, 13, -103, 124, -119, -35, 74, -72, 22, 30, -16, -31, 19, -59, -8, 92 };
+
+    public Type getType()
+    {
+        return TYPE;
+    }
+
+    public static final Type TYPE = Sys.loadType(BSystem600License.class);
 }
 

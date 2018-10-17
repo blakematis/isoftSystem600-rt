@@ -9,10 +9,18 @@ import javax.baja.sys.Type;
 public class BSystem600DeviceFolder
         extends BDeviceFolder
 {
-    public Type getType()
-    {
-        return TYPE;
-    }
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.BSystem600DeviceFolder(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:28 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public static final Type TYPE = Sys.loadType(BSystem600DeviceFolder.class);
 

@@ -10,7 +10,18 @@ import javax.baja.util.Lexicon;
 public final class BSystem600LicenseCount
         extends BFrozenEnum
 {
-    public static Lexicon lex = Lexicon.make("isoftSystem600B");
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.license.BSystem600LicenseCount(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:41 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+    public static Lexicon lex = Lexicon.make("isoftSystem600");
     public static final int NONE = 0;
     public static final int COUNT_500 = 500;
     public static final int COUNT_1000 = 1000;
@@ -54,12 +65,7 @@ public final class BSystem600LicenseCount
     public static final BSystem600LicenseCount count_9500 = new BSystem600LicenseCount(9500);
     public static final BSystem600LicenseCount count_10000 = new BSystem600LicenseCount(10000);
 
-    public Type getType()
-    {
-        return TYPE;
-    }
 
-    public static final Type TYPE = Sys.loadType(BSystem600LicenseCount.class);
 
     public static BSystem600LicenseCount make(int ordinal)
     {
@@ -77,4 +83,8 @@ public final class BSystem600LicenseCount
     }
 
     public static final BSystem600LicenseCount DEFAULT = none;
+
+    @Override
+    public Type getType() { return TYPE; }
+    public static final Type TYPE = Sys.loadType(BSystem600LicenseCount.class);
 }

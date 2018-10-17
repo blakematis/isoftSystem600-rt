@@ -22,6 +22,19 @@ public class BApogeeLearnDevicesJob
         implements System600MessageConst
 {
     public static final Property learnedDevices = newProperty(7, new BFolder(), null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.job.BApogeeLearnDevicesJob(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:40 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BApogeeLearnDevicesJob.class);
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public BFolder getLearnedDevices()
     {
@@ -33,12 +46,7 @@ public class BApogeeLearnDevicesJob
         set(learnedDevices, v, null);
     }
 
-    public Type getType()
-    {
-        return TYPE;
-    }
 
-    public static final Type TYPE = Sys.loadType(BApogeeLearnDevicesJob.class);
     final BSystem600Network network;
     int startAddress;
     int endAddress;

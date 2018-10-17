@@ -26,6 +26,17 @@ public class BSystem600LicenseConfig
     }
 
     public static final Property pointCount = newProperty(0, BSystem600LicenseCount.count_10000, null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.license.BSystem600LicenseConfig(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:41 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public BSystem600LicenseCount getPointCount()
     {

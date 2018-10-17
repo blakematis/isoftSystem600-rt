@@ -61,6 +61,19 @@ public class BApogeeLearnPointEntry
     }
 
     public static final Property descriptor = newProperty(0, "", null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.job.BApogeeLearnPointEntry(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:41 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BApogeeLearnPointEntry.class);
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public String getDescriptor()
     {
@@ -72,12 +85,6 @@ public class BApogeeLearnPointEntry
         setString(descriptor, v, null);
     }
 
-    public Type getType()
-    {
-        return TYPE;
-    }
-
-    public static final Type TYPE = Sys.loadType(BApogeeLearnPointEntry.class);
 
     public BApogeeLearnPointEntry() {}
 

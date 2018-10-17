@@ -49,6 +49,19 @@ public class BApogeeLearnDeviceEntry
     }
 
     public static final Property description = newProperty(0, "", null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.job.BApogeeLearnDeviceEntry(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:40 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BApogeeLearnDeviceEntry.class);
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public String getDescription()
     {
@@ -60,12 +73,7 @@ public class BApogeeLearnDeviceEntry
         setString(description, v, null);
     }
 
-    public Type getType()
-    {
-        return TYPE;
-    }
 
-    public static final Type TYPE = Sys.loadType(BApogeeLearnDeviceEntry.class);
 
     public BApogeeLearnDeviceEntry(int address, String rev, int app, String desc)
     {

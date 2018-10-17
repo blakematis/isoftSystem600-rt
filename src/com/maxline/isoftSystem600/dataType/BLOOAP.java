@@ -12,12 +12,18 @@ import javax.baja.sys.Type;
 public class BLOOAP
         extends BEnumWritable
 {
-    public Type getType()
-    {
-        return TYPE;
-    }
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.dataType.BLOOAP(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:30 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
-    public static final Type TYPE = Sys.loadType(BLOOAP.class);
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+
 
     public BLOOAP()
     {
@@ -26,4 +32,7 @@ public class BLOOAP
 
     static final String[] enumTag = { "OFF", "ON", "AUTO" };
     static BFacets localFacets = BFacets.makeEnum(BEnumRange.make(enumTag));
+    @Override
+    public Type getType() { return TYPE; }
+    public static final Type TYPE = Sys.loadType(BLOOAP.class);
 }

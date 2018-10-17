@@ -1,5 +1,7 @@
 package com.maxline.isoftSystem600;
 
+import com.maxline.isoftSystem600.comm.BEnerDaptSerialHelper;
+import com.maxline.isoftSystem600.comm.EnerDaptSystem600Comm;
 import com.maxline.isoftSystem600.comm.System600Comm;
 import com.maxline.isoftSystem600.comm.System600CommReceiver;
 import com.maxline.isoftSystem600.job.BApogeeLearnDevicesConfig;
@@ -12,14 +14,8 @@ import java.util.Vector;
 import javax.baja.naming.BOrd;
 import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.serial.BSerialBaudRate;
-import javax.baja.sys.Action;
-import javax.baja.sys.BBoolean;
-import javax.baja.sys.BFacets;
-import javax.baja.sys.BRelTime;
-import javax.baja.sys.Context;
-import javax.baja.sys.Property;
-import javax.baja.sys.Sys;
-import javax.baja.sys.Type;
+import javax.baja.serial.BSerialHelper;
+import javax.baja.sys.*;
 
 @NiagaraType
 public class BSystem600Network
@@ -62,25 +58,41 @@ public class BSystem600Network
     }
 
     public static final Action submitDiscoveryDevicesJob = newAction(4, new BApogeeLearnDevicesConfig(), null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.BSystem600Network(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:28 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public BOrd submitDiscoveryDevicesJob(BApogeeLearnDevicesConfig arg)
     {
         return (BOrd)invoke(submitDiscoveryDevicesJob, arg, null);
     }
 
-    public Type getType()
-    {
-        return TYPE;
-    }
-
-    public static final Type TYPE = Sys.loadType(BSystem600Network.class);
 
     public BSystem600Network()
     {
+
+        //getSerialPortConfig().setBaudRate(BSerialBaudRate.baud4800);
+        setSerialPortConfig(new BEnerDaptSerialHelper());
         getSerialPortConfig().setBaudRate(BSerialBaudRate.baud4800);
         setFlags(upload, 4);
         setFlags(download, 4);
     }
+
+
+
+    public static final Property serialPortConfig = newProperty(Flags.SUMMARY, new BEnerDaptSerialHelper(), null);
+
+
+    @Override
+    public BEnerDaptSerialHelper getSerialPortConfig() {
+        return (BEnerDaptSerialHelper) this.get(serialPortConfig);
+    }
+
+    public void setSerialPortConfig(BEnerDaptSerialHelper v){ this.set(serialPortConfig, v, null);}
 
     public Type getDeviceType()
     {
@@ -120,7 +132,7 @@ public class BSystem600Network
 
     protected Comm makeComm()
     {
-        return new System600Comm(this, new System600CommReceiver());
+        return new EnerDaptSystem600Comm(this, new System600CommReceiver());
     }
 
     private final void removeOldComponent()
@@ -165,4 +177,12 @@ public class BSystem600Network
     }
 
     private Vector<BSystem600ProxyExt> licenseVector = new Vector();
+
+    ////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+
+    @Override
+    public Type getType() { return TYPE; }
+    public static final Type TYPE = Sys.loadType(BSystem600Network.class);
 }

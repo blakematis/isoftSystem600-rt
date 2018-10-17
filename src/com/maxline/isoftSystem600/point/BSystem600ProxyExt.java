@@ -16,6 +16,7 @@ import com.tridium.basicdriver.util.BasicWriteAsyncRequest;
 
 import javax.baja.driver.point.BReadWriteMode;
 import javax.baja.driver.util.BPollFrequency;
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.status.BStatusBoolean;
 import javax.baja.status.BStatusEnum;
 import javax.baja.status.BStatusNumeric;
@@ -28,6 +29,7 @@ import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 import javax.baja.util.Lexicon;
 
+@NiagaraType
 public abstract class BSystem600ProxyExt
         extends BBasicProxyExt
         implements BIBasicPollable, System600MessageConst

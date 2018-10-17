@@ -10,12 +10,17 @@ import javax.baja.sys.Type;
 public class BLDI
         extends BBooleanPoint
 {
-    public Type getType()
-    {
-        return TYPE;
-    }
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.dataType.BLDI(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:30 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
-    public static final Type TYPE = Sys.loadType(BLDI.class);
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+
 
     public BLDI()
     {
@@ -23,4 +28,11 @@ public class BLDI
     }
 
     static BFacets localFacets = BFacets.makeBoolean("ON", "OFF");
+
+    public Type getType()
+    {
+        return TYPE;
+    }
+
+    public static final Type TYPE = Sys.loadType(BLDI.class);
 }

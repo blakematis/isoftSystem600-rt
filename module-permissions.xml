@@ -1,19 +1,38 @@
 <permissions>
   <niagara-permission-groups type="all">
-    <!-- Insert any global permissions here. -->
+    <req-permission>
+      <name>LOGGING</name>
+      <purposeKey>This module needs to log warning to user.</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>LOAD_LIBRARIES</name>
+      <parameters>
+        <parameter name="libraries" value="*"></parameter>
+      </parameters>
+      <purposeKey>Load the (lib) JNA library to get access to the Comm Ports</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>SYSTEM_PROPERTIES</name>
+      <parameters>
+        <parameter name="properties" value="jnidispatch.path"></parameter>
+        <parameter name="actions" value="write"></parameter>
+
+      </parameters>
+      <purposeKey>Enable access to the dispatch.path property</purposeKey>
+    </req-permission>
+
+    <req-permission>
+      <name>NETWORK_COMMUNICATION</name>
+      <purposeKey>Enables access to network communication for the BACnet IP driver</purposeKey>
+      <parameters>
+        <parameter name="hosts" value="*"></parameter>
+        <parameter name="ports" value="47808-47814"></parameter>
+      </parameters>
+    </req-permission>
+    <req-permission>
+      <name>MANAGE_EXECUTION</name>
+      <purposeKey>Enable access to all properties</purposeKey>
+    </req-permission>
   </niagara-permission-groups>
-  <niagara-permission-groups type="workbench">
-    <!-- Insert any workbench specific permissions here. -->
-  </niagara-permission-groups>
-  <niagara-permission-groups type="station">
-    <!--<req-permission>-->
-    <!--<name>NETWORK_COMMUNICATION</name>-->
-    <!--<purposeKey>Outside access for Driver</purposeKey>-->
-    <!--<parameters>-->
-      <!--<parameter name="hosts" value="127.0.0.1"/>-->
-      <!--<parameter name="ports" value="*"/>-->
-      <!--<parameter name="type" value="all"/>-->
-    <!--</parameters>-->
-    <!--</req-permission>-->
-  </niagara-permission-groups>
+
 </permissions>

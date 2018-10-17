@@ -88,6 +88,13 @@ public class BSystem600Device
     }
 
     public static final Action submitPointsDiscoveryJob = newAction(4, BApogeeUnit.metric, null);
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.maxline.isoftSystem600.BSystem600Device(2979906276)1.0$ @*/
+/* Generated Mon Oct 15 14:56:28 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public BOrd submitPointsDiscoveryJob(BApogeeUnit arg)
     {
