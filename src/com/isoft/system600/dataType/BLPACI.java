@@ -10,7 +10,7 @@ public class BLPACI
         extends BNumericWritable
 {
 
-  
+
   @Override
   public Type getType() { return TYPE; }
   public static final Type TYPE = Sys.loadType(BLPACI.class);

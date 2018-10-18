@@ -4,12 +4,15 @@ import com.isoft.system600.messages.ReadPointResponse;
 import com.isoft.system600.messages.System600WriteRequest;
 import com.isoft.system600.messages.System600WriteResponse;
 
+import javax.baja.nre.annotations.NiagaraProperty;
+import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.status.BStatusEnum;
 import javax.baja.status.BStatusValue;
 import javax.baja.sys.BDynamicEnum;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 
+@NiagaraType
 public class BSystem600EnumProxyExt
         extends BSystem600ProxyExt
 {

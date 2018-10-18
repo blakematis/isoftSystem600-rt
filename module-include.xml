@@ -1,7 +1,6 @@
 <!-- Module Include File -->
 <!-- Types -->
 <types>
-
   <!--com.isoft.system600-->
   <type class="com.isoft.system600.BSystem600Device" name="System600Device"/>
   <type class="com.isoft.system600.BSystem600DeviceFolder" name="System600DeviceFolder"/>
@@ -22,6 +21,7 @@
   <type class="com.isoft.system600.dataType.BLOOAL" name="LOOAL"/>
   <type class="com.isoft.system600.dataType.BLOOAP" name="LOOAP"/>
   <type class="com.isoft.system600.dataType.BLPACI" name="LPACI"/>
+  <type class="com.isoft.system600.dataType.BLFSSP" name="LFSSP"/>
   <!--com.isoft.system600.enums-->
   <type class="com.isoft.system600.enums.BApogeeUnit" name="ApogeeUnit"/>
   <type class="com.isoft.system600.enums.BCommPortEnums" name="CommPortEnums"/>
@@ -44,4 +44,5 @@
   <type class="com.isoft.system600.point.BSystem600PointFolder" name="System600PointFolder"/>
   <type class="com.isoft.system600.point.BSystem600ProxyExt" name="System600ProxyExt"/>
   <type class="com.isoft.system600.point.BSystem600StringProxyExt" name="System600StringProxyExt"/>
+  <type class="com.isoft.system600.point.BSystem600EnumProxyExt" name="System600EnumProxyExt"/>
 </types>
