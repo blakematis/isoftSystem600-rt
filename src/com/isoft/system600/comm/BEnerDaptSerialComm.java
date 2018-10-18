@@ -15,7 +15,7 @@ import javax.baja.sys.*;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class BEnerDaptSerialComm extends BCommPlugIn implements BISerialHelperParent {
+public class BEnerDaptSerialComm extends BCommPlugIn implements BIEnerDaptSerialHelperParent {
     public static final Property interMessageDelay = newProperty(0, BRelTime.make(20L), BFacets.make("showMilliseconds", BBoolean.TRUE, "min", BRelTime.make(5L), "max", BRelTime.SECOND));
     public static final Property enerDaptSerialPortConfig = newProperty(Flags.SUMMARY, new BEnerDaptSerialHelper(), null);
     private static final long MIN_SLEEP_TIME = 10L;
@@ -206,7 +206,7 @@ public class BEnerDaptSerialComm extends BCommPlugIn implements BISerialHelperPa
 
     public String toString(Context cx) {
         StringBuffer sb = new StringBuffer();
-        BSerialHelper sh = this.getEnerDaptSerialPortConfig();
+        BEnerDaptSerialHelper sh = this.getEnerDaptSerialPortConfig();
         sb.append(sh.getPortName());
         sb.append(' ');
         sb.append(sh.getBaudRate());

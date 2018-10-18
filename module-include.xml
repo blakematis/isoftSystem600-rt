@@ -8,6 +8,7 @@
   <!--com.isoft.system600.comm-->
   <type class="com.isoft.system600.comm.BEnerDaptSerialHelper" name="EnerDaptSerialHelper"/>
   <type class="com.isoft.system600.comm.BEnerDaptSerialPort" name="EnerDaptSerialPort"/>
+  <type class="com.isoft.system600.comm.BIEnerDaptSerialHelperParent" name="IEnerDaptSerialHelperParent"/>
   <!--com.isoft.system600.dataType-->
   <type class="com.isoft.system600.dataType.BL2SL" name="L2SL"/>
   <type class="com.isoft.system600.dataType.BL2SP" name="L2SP"/>
