@@ -30,7 +30,7 @@ import javax.baja.sys.Type;
 import javax.baja.util.Lexicon;
 
 @NiagaraType
-public abstract class BSystem600ProxyExt
+public class BSystem600ProxyExt
         extends BBasicProxyExt
         implements BIBasicPollable, System600MessageConst
 {
@@ -106,12 +106,6 @@ public abstract class BSystem600ProxyExt
         setInt(state, v, null);
     }
 
-    public Type getType()
-    {
-        return TYPE;
-    }
-
-    public static final Type TYPE = Sys.loadType(BSystem600ProxyExt.class);
 
     public final BSystem600Network getSystem600Network()
     {
@@ -212,7 +206,7 @@ public abstract class BSystem600ProxyExt
         }
     }
 
-    public abstract void readData(ReadPointResponse paramReadPointResponse);
+    public void readData(ReadPointResponse paramReadPointResponse){}
 
     public boolean isValid()
     {
@@ -318,7 +312,9 @@ public abstract class BSystem600ProxyExt
         }
     }
 
-    public abstract boolean updateOutput(BStatusValue paramBStatusValue);
+    public boolean updateOutput(BStatusValue paramBStatusValue){
+        return false;
+    }
 
     protected boolean isBoolean()
     {
@@ -343,4 +339,10 @@ public abstract class BSystem600ProxyExt
     static Lexicon lex = Lexicon.make(BBasicProxyExt.class);
     static int STATE_NORMAL = 0;
     static int STATE_OVERRIDE = 1;
+
+    public static final Type TYPE = Sys.loadType(BSystem600ProxyExt.class);
+
+    public Type getType(){
+        return TYPE;
+    }
 }

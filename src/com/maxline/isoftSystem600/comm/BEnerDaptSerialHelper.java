@@ -3,8 +3,9 @@ package com.maxline.isoftSystem600.comm;
 import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.serial.BISerialPort;
 import javax.baja.serial.BSerialHelper;
-import javax.baja.sys.Sys;
-import javax.baja.sys.Type;
+import javax.baja.sys.*;
+
+import static javax.baja.sys.BFacets.*;
 
 @NiagaraType
 public class BEnerDaptSerialHelper extends BSerialHelper {
@@ -18,22 +19,55 @@ public class BEnerDaptSerialHelper extends BSerialHelper {
 
 
 /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
-    private BEnerDaptSerialPort bEnerDaptSerialPort;
+    private BEnerDaptSerialPort bEnerDaptSerialPort = null;
 
-    public BEnerDaptSerialHelper(){
 
-    }
 
     @Override
     public BISerialPort open(String owner) throws Exception {
         try {
+            log.info("Opening SerialPort");
             bEnerDaptSerialPort = new BEnerDaptSerialPort();
             bEnerDaptSerialPort.open(owner);
         } catch (Exception e){
+            e.printStackTrace();
+            e.getMessage();
             log.warning("unable to open port " + e.getMessage());
         }
         return bEnerDaptSerialPort;
     }
+
+    public void doOpenPort(){
+        try {
+            open(getPortName());
+            log.info("port opened");
+
+        } catch (Exception e) {
+            log.warning("unable to open port");
+            e.printStackTrace();
+        }
+    }
+
+    public void doListPorts(){
+        bEnerDaptSerialPort.listPort();
+    }
+
+    public void doIsPortOpen(){
+        bEnerDaptSerialPort.isOpen();
+    }
+
+    public static final Action openPort = newAction(Flags.SUMMARY, null, null);
+
+    public void openPort(){ invoke(openPort, null, null);}
+
+    public static final Action isPortOpen = newAction(Flags.SUMMARY, null, null);
+
+    public void isPortOpen(){ invoke(isPortOpen, null, null);}
+
+    public static final Action listPorts = newAction(Flags.SUMMARY, null, null);
+
+    public void listPorts(){ invoke(listPorts, null, null);}
+
 
     public static final Type TYPE = Sys.loadType(BEnerDaptSerialHelper.class);
 

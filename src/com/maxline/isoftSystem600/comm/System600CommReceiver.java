@@ -32,7 +32,13 @@ public class System600CommReceiver
         this.resLength = 0;
         while (!done)
         {
-            int charIn = getInputStream().read();
+
+            int charIn = -1;
+            try {
+                charIn = getInputStream().read();
+            }catch (Exception e){
+
+            }
             boolean newChar = charIn != -1;
             charIn &= 0xFF;
             if (newChar) {

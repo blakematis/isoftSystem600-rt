@@ -1,6 +1,7 @@
 package com.maxline.isoftSystem600.comm;
 
 
+import com.maxline.isoftSystem600.BSystem600Network;
 import com.tridium.basicdriver.message.Message;
 import com.tridium.basicdriver.serial.BSerialNetwork;
 
@@ -10,8 +11,8 @@ public class EnerDaptSystem600Comm extends EnerDaptSerialComm {
 
     private System600CommReceiver commReceiver = null;
 
-    public EnerDaptSystem600Comm(BSerialNetwork serialNetwork, System600CommReceiver rDriver) {
-        super(serialNetwork, rDriver);
+    public EnerDaptSystem600Comm(BSystem600Network system600Network, System600CommReceiver rDriver) {
+        super(system600Network, rDriver);
         this.commReceiver = rDriver;
     }
 
