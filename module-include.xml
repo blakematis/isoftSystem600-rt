@@ -1,48 +1,47 @@
 <!-- Module Include File -->
 <!-- Types -->
 <types>
-  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
-  <!--com.maxline.isoftSystem600.dataType-->
-  <type class="com.maxline.isoftSystem600.dataType.BL2SL" name="L2SL"/>
-  <type class="com.maxline.isoftSystem600.dataType.BL2SP" name="L2SP"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLAI" name="LAI"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLAO" name="LAO"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLCTLR" name="LCTLR"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLDI" name="LDI"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLDO" name="LDO"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLENUM" name="LENUM"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLFSSL" name="LFSSL"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLFSSP" name="LFSSP"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLOOAL" name="LOOAL"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLOOAP" name="LOOAP"/>
-  <type class="com.maxline.isoftSystem600.dataType.BLPACI" name="LPACI"/>
-  <!--com.maxline.isoftSystem600.point-->
-  <type class="com.maxline.isoftSystem600.point.BApogeeReleaseAction" name="ApogeeReleaseAction"/>
-  <type class="com.maxline.isoftSystem600.point.BSystem600BooleanProxyExt" name="System600BooleanProxyExt"/>
-  <type class="com.maxline.isoftSystem600.point.BSystem600NumericProxyExt" name="System600NumericProxyExt"/>
-  <type class="com.maxline.isoftSystem600.point.BSystem600PointDeviceExt" name="System600PointDeviceExt"/>
-  <type class="com.maxline.isoftSystem600.point.BSystem600PointFolder" name="System600PointFolder"/>
-  <type class="com.maxline.isoftSystem600.point.BSystem600StringProxyExt" name="System600StringProxyExt"/>
-  <type class="com.maxline.isoftSystem600.point.BSystem600ProxyExt" name="System600ProxyExt"/>
-  <!--com.maxline.isoftSystem600-->
-  <type class="com.maxline.isoftSystem600.BSystem600Device" name="System600Device"/>
-  <type class="com.maxline.isoftSystem600.BSystem600DeviceFolder" name="System600DeviceFolder"/>
-  <type class="com.maxline.isoftSystem600.BSystem600Network" name="System600Network"/>
-  <!--com.maxline.isoftSystem600.license-->
-  <type class="com.maxline.isoftSystem600.license.BSystem600License" name="System600License"/>
-  <type class="com.maxline.isoftSystem600.license.BSystem600LicenseConfig" name="System600LicenseConfig"/>
-  <type class="com.maxline.isoftSystem600.license.BSystem600LicenseCount" name="System600LicenseCount"/>
-  <!--com.maxline.isoftSystem600.enums-->
-  <type class="com.maxline.isoftSystem600.enums.BApogeeUnit" name="ApogeeUnit"/>
-  <type class="com.maxline.isoftSystem600.enums.BPointType" name="PointType"/>
-  <type class="com.maxline.isoftSystem600.enums.BCommPortEnums" name="CommPortEnums"/>
-  <!--com.maxline.isoftSystem600.job-->
-  <type class="com.maxline.isoftSystem600.job.BApogeeLearnDeviceEntry" name="ApogeeLearnDeviceEntry"/>
-  <type class="com.maxline.isoftSystem600.job.BApogeeLearnDevicesConfig" name="ApogeeLearnDevicesConfig"/>
-  <type class="com.maxline.isoftSystem600.job.BApogeeLearnDevicesJob" name="ApogeeLearnDevicesJob"/>
-  <type class="com.maxline.isoftSystem600.job.BApogeeLearnPointEntry" name="ApogeeLearnPointEntry"/>
-  <type class="com.maxline.isoftSystem600.job.BApogeeLearnPointsJob" name="ApogeeLearnPointsJob"/>
-  <!--com.maxline.isoftSystem600.comm-->
-  <type class="com.maxline.isoftSystem600.comm.BEnerDaptSerialHelper" name="EnerDaptSerialHelper"/>
-  <type class="com.maxline.isoftSystem600.comm.BEnerDaptSerialPort" name="EnerDaptSerialPort"/>
+
+  <!--com.isoft.system600-->
+  <type class="com.isoft.system600.BSystem600Device" name="System600Device"/>
+  <type class="com.isoft.system600.BSystem600DeviceFolder" name="System600DeviceFolder"/>
+  <type class="com.isoft.system600.BSystem600Network" name="System600Network"/>
+  <!--com.isoft.system600.comm-->
+  <type class="com.isoft.system600.comm.BEnerDaptSerialHelper" name="EnerDaptSerialHelper"/>
+  <type class="com.isoft.system600.comm.BEnerDaptSerialPort" name="EnerDaptSerialPort"/>
+  <!--com.isoft.system600.dataType-->
+  <type class="com.isoft.system600.dataType.BL2SL" name="L2SL"/>
+  <type class="com.isoft.system600.dataType.BL2SP" name="L2SP"/>
+  <type class="com.isoft.system600.dataType.BLAI" name="LAI"/>
+  <type class="com.isoft.system600.dataType.BLAO" name="LAO"/>
+  <type class="com.isoft.system600.dataType.BLCTLR" name="LCTLR"/>
+  <type class="com.isoft.system600.dataType.BLDI" name="LDI"/>
+  <type class="com.isoft.system600.dataType.BLDO" name="LDO"/>
+  <type class="com.isoft.system600.dataType.BLENUM" name="LENUM"/>
+  <type class="com.isoft.system600.dataType.BLFSSL" name="LFSSL"/>
+  <type class="com.isoft.system600.dataType.BLOOAL" name="LOOAL"/>
+  <type class="com.isoft.system600.dataType.BLOOAP" name="LOOAP"/>
+  <type class="com.isoft.system600.dataType.BLPACI" name="LPACI"/>
+  <!--com.isoft.system600.enums-->
+  <type class="com.isoft.system600.enums.BApogeeUnit" name="ApogeeUnit"/>
+  <type class="com.isoft.system600.enums.BCommPortEnums" name="CommPortEnums"/>
+  <type class="com.isoft.system600.enums.BPointType" name="PointType"/>
+  <!--com.isoft.system600.job-->
+  <type class="com.isoft.system600.job.BApogeeLearnDeviceEntry" name="ApogeeLearnDeviceEntry"/>
+  <type class="com.isoft.system600.job.BApogeeLearnDevicesConfig" name="ApogeeLearnDevicesConfig"/>
+  <type class="com.isoft.system600.job.BApogeeLearnDevicesJob" name="ApogeeLearnDevicesJob"/>
+  <type class="com.isoft.system600.job.BApogeeLearnPointEntry" name="ApogeeLearnPointEntry"/>
+  <type class="com.isoft.system600.job.BApogeeLearnPointsJob" name="ApogeeLearnPointsJob"/>
+  <!--com.isoft.system600.license-->
+  <type class="com.isoft.system600.license.BSystem600License" name="System600License"/>
+  <type class="com.isoft.system600.license.BSystem600LicenseConfig" name="System600LicenseConfig"/>
+  <type class="com.isoft.system600.license.BSystem600LicenseCount" name="System600LicenseCount"/>
+  <!--com.isoft.system600.point-->
+  <type class="com.isoft.system600.point.BApogeeReleaseAction" name="ApogeeReleaseAction"/>
+  <type class="com.isoft.system600.point.BSystem600BooleanProxyExt" name="System600BooleanProxyExt"/>
+  <type class="com.isoft.system600.point.BSystem600NumericProxyExt" name="System600NumericProxyExt"/>
+  <type class="com.isoft.system600.point.BSystem600PointDeviceExt" name="System600PointDeviceExt"/>
+  <type class="com.isoft.system600.point.BSystem600PointFolder" name="System600PointFolder"/>
+  <type class="com.isoft.system600.point.BSystem600ProxyExt" name="System600ProxyExt"/>
+  <type class="com.isoft.system600.point.BSystem600StringProxyExt" name="System600StringProxyExt"/>
 </types>
