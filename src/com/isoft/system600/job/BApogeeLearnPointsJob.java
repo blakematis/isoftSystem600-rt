@@ -33,9 +33,7 @@ public class BApogeeLearnPointsJob
 // Type
 ////////////////////////////////////////////////////////////////
   
-  @Override
-  public Type getType() { return TYPE; }
-  public static final Type TYPE = Sys.loadType(BApogeeLearnPointsJob.class);
+
 
 /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
@@ -162,4 +160,8 @@ public class BApogeeLearnPointsJob
         this.device.getSystem600Network().getLog().message("Learn Apogee Points Job:" + s);
         this.device.getSystem600Network().getLog().setSeverity(i);
     }
+
+    @Override
+    public Type getType() { return TYPE; }
+    public static final Type TYPE = Sys.loadType(BApogeeLearnPointsJob.class);
 }

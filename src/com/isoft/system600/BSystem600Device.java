@@ -3,12 +3,24 @@ package com.isoft.system600;
 
 import com.isoft.system600.enums.BApogeeUnit;
 import com.isoft.system600.job.BApogeeLearnPointsJob;
-import com.isoft.system600.messages.*;
+import com.isoft.system600.messages.DiscoveryPointsRequest;
+import com.isoft.system600.messages.ReadPointRequest;
+import com.isoft.system600.messages.ReadPointResponse;
+import com.isoft.system600.messages.System600MessageConst;
+import com.isoft.system600.messages.System600PingRequest;
+import com.isoft.system600.messages.System600PingResponse;
 import com.isoft.system600.point.BSystem600PointDeviceExt;
 import com.tridium.basicdriver.BBasicDevice;
 import javax.baja.naming.BOrd;
 import javax.baja.nre.annotations.NiagaraType;
-import javax.baja.sys.*;
+import javax.baja.sys.Action;
+import javax.baja.sys.BFacets;
+import javax.baja.sys.BRelTime;
+import javax.baja.sys.Context;
+import javax.baja.sys.Property;
+import javax.baja.sys.Sys;
+import javax.baja.sys.Type;
+import javax.baja.sys.Flags;
 import javax.baja.util.IFuture;
 
 @NiagaraType
@@ -77,13 +89,6 @@ public class BSystem600Device
     }
 
     public static final Action submitPointsDiscoveryJob = newAction(Flags.SUMMARY, BApogeeUnit.metric, null);
-/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-/*@ $com.maxline.isoftSystem600.BSystem600Device(2979906276)1.0$ @*/
-/* Generated Mon Oct 15 14:56:28 PDT 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
-
-
-
-/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
     public BOrd submitPointsDiscoveryJob(BApogeeUnit arg)
     {

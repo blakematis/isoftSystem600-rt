@@ -1,6 +1,7 @@
 package com.isoft.system600.enums;
 
 import javax.baja.nre.annotations.NiagaraType;
+import javax.baja.sys.BEnumRange;
 import javax.baja.sys.BFrozenEnum;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
@@ -24,11 +25,7 @@ public final class BApogeeUnit
     public static final BApogeeUnit metric = new BApogeeUnit(0);
     public static final BApogeeUnit english = new BApogeeUnit(1);
 
-    public Type getType() {
-        return TYPE;
-    }
 
-    public static final Type TYPE = Sys.loadType(BApogeeUnit.class);
 
     public static BApogeeUnit make(int ordinal) {
         return (BApogeeUnit) metric.getRange().get(ordinal, false);
@@ -41,4 +38,10 @@ public final class BApogeeUnit
     private BApogeeUnit(int ordinal) {
         super(ordinal);
     }
+
+    public Type getType() {
+        return TYPE;
+    }
+
+    public static final Type TYPE = Sys.loadType(BApogeeUnit.class);
 }

@@ -1,7 +1,6 @@
 package com.isoft.system600.job;
 
 import com.isoft.system600.enums.BPointType;
-
 import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.BComponent;
 import javax.baja.sys.Property;
@@ -69,9 +68,7 @@ public class BApogeeLearnPointEntry
 // Type
 ////////////////////////////////////////////////////////////////
   
-  @Override
-  public Type getType() { return TYPE; }
-  public static final Type TYPE = Sys.loadType(BApogeeLearnPointEntry.class);
+
 
 /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
 
@@ -103,4 +100,8 @@ public class BApogeeLearnPointEntry
             e.printStackTrace();
         }
     }
+
+    @Override
+    public Type getType() { return TYPE; }
+    public static final Type TYPE = Sys.loadType(BApogeeLearnPointEntry.class);
 }

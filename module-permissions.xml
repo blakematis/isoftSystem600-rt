@@ -12,15 +12,37 @@
       <purposeKey>Load the (lib) JNA library to get access to the Comm Ports</purposeKey>
     </req-permission>
     <req-permission>
+      <name>AUTHENTICATION</name>
+      <purposeKey>This module needs AUTHENTICATION.</purposeKey>
+    </req-permission>
+    <req-permission>
       <name>SYSTEM_PROPERTIES</name>
       <parameters>
         <parameter name="properties" value="jnidispatch.path"></parameter>
         <parameter name="actions" value="write"></parameter>
-
       </parameters>
       <purposeKey>Enable access to the dispatch.path property</purposeKey>
     </req-permission>
-
+    <req-permission>
+      <name>SHUTDOWN_HOOKS</name>
+      <purposeKey>This module needs access to SHUTDOWN_HOOKS.</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>SYSTEM_PROPERTIES</name>
+      <purposeKey>This module needs access to property</purposeKey>
+      <parameters>
+        <parameter name="properties" value="*"/>
+        <parameter name="actions" value="read"/>
+      </parameters>
+    </req-permission>
+    <req-permission>
+      <name>UI</name>
+      <purposeKey>Enables UI access</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>MODIFY_IO_STREAMS</name>
+      <purposeKey>This module needs access to setIO.</purposeKey>
+    </req-permission>
     <req-permission>
       <name>NETWORK_COMMUNICATION</name>
       <purposeKey>Enables access to network communication for the BACnet IP driver</purposeKey>

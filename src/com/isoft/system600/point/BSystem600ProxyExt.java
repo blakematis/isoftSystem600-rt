@@ -30,7 +30,7 @@ import javax.baja.sys.Type;
 import javax.baja.util.Lexicon;
 
 @NiagaraType
-public class BSystem600ProxyExt
+public abstract class BSystem600ProxyExt
         extends BBasicProxyExt
         implements BIBasicPollable, System600MessageConst
 {

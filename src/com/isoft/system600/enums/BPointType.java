@@ -18,9 +18,7 @@ public final class BPointType
 // Type
 ////////////////////////////////////////////////////////////////
   
-  @Override
-  public Type getType() { return TYPE; }
-  public static final Type TYPE = Sys.loadType(BPointType.class);
+
 
 /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
     static Lexicon lex = Lexicon.make("isoftSystem600");
@@ -65,5 +63,9 @@ public final class BPointType
     {
         super(ordinal);
     }
+
+    @Override
+    public Type getType() { return TYPE; }
+    public static final Type TYPE = Sys.loadType(BPointType.class);
 }
 
